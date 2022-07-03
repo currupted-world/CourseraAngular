@@ -1,5 +1,5 @@
 var learner = {
-    name: "hello",
+    name: "",
     type: "learner"
 };
 
