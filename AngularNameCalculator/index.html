@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./angular.min.js"></script>
+    <script src="./app.js"></script>
+    <title>Name Calculator using Angular</title>
+    <style>
+        body{
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body ng-app="NameCalculator">
+    <h1>Name calculator using angular</h1>
+    <div ng-controller="NameCalculatorController">
+        <div>
+           Enter your Name: <input type="text" 
+           ng-keyup="displayNumeric();" 
+           name="" ng-model="name" id="">
+        </div>
+        <div>
+            Totel numeric value of person's name is: {{totelValue}}
+        </div>
+    </div>
+    
+</body>
+
+</html>
